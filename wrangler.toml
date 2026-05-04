@@ -4,3 +4,18 @@ account_id = "9166eee081850be3de4809d196801105"
 
 [assets]
 directory = "public"
+
+[observability]
+enabled = false
+head_sampling_rate = 1
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+persist = true
+invocation_logs = true
+
+[observability.traces]
+enabled = false
+persist = true
+head_sampling_rate = 1
